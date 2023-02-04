@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{21df55aa-107c-497a-bace-5de48c7c5256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="craft">
+      <UniqueIdentifier>{929c6fff-04cf-4c5b-810f-4532664fd499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="craft\range">
+      <UniqueIdentifier>{3ac92184-8cbc-4ab5-8a5a-ac6ac7932e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="craft\swap">
+      <UniqueIdentifier>{788d50ad-dc37-47ab-8b1f-493a047b53f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="craft\exception">
+      <UniqueIdentifier>{a9aa11fe-11b0-4992-9f4e-ffb3febae1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Omok">
+      <UniqueIdentifier>{24a6d60d-cfb8-4f96-b385-df40961733df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Omok\Rule">
+      <UniqueIdentifier>{8a392553-136b-4062-9ebd-f942d3140cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Omok\Rule\RenjuRule">
+      <UniqueIdentifier>{ae75ad6f-7623-4cf2-a6ff-8c008eb0a290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Omok\Rule\RenjuRule\Roll">
+      <UniqueIdentifier>{6ff84ecb-8dac-4274-beef-e1778d9681c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Omok\Rule\RenjuRule\RenjuRule">
+      <UniqueIdentifier>{defede13-27eb-486e-a816-dd537241ca08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Omok\Rule\MapControl">
+      <UniqueIdentifier>{bbce6665-66a5-46d1-a467-c3b4314ef127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Omok\Rule\Rule">
+      <UniqueIdentifier>{e6225889-e3b4-46c7-8e26-d6ec97045891}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="RenjuRule_Roll.h">
+      <Filter>Omok\Rule\RenjuRule\Roll</Filter>
+    </ClInclude>
+    <ClInclude Include="craft_range.h">
+      <Filter>craft\range</Filter>
+    </ClInclude>
+    <ClInclude Include="swap.h">
+      <Filter>craft\swap</Filter>
+    </ClInclude>
+    <ClInclude Include="RenjuRule.h">
+      <Filter>Omok\Rule\RenjuRule\RenjuRule</Filter>
+    </ClInclude>
+    <ClInclude Include="MapControl.h">
+      <Filter>Omok\Rule\MapControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Rule.h">
+      <Filter>Omok\Rule\Rule</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>craft\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="default_property.h">
+      <Filter>Omok</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RenjuRule_Roll.cpp">
+      <Filter>Omok\Rule\RenjuRule\Roll</Filter>
+    </ClCompile>
+    <ClCompile Include="craft_range.cpp">
+      <Filter>craft\range</Filter>
+    </ClCompile>
+    <ClCompile Include="RenjuRule.cpp">
+      <Filter>Omok\Rule\RenjuRule\RenjuRule</Filter>
+    </ClCompile>
+    <ClCompile Include="MapControl.cpp">
+      <Filter>Omok\Rule\MapControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Rule.cpp">
+      <Filter>Omok\Rule\Rule</Filter>
+    </ClCompile>
+    <ClCompile Include="exception.cpp">
+      <Filter>craft\exception</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
