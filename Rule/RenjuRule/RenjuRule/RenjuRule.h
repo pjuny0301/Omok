@@ -19,7 +19,7 @@ namespace RenjuRule
 			static bool InstanceExist = false;
 			if (InstanceExist)
 			{
-				assert("Rule¿¡¼­ ÀÎ½ºÅÏ½º°¡ 2¹ø ÀÌ»ó »ı¼ºµÇ¾ú½À´Ï´Ù");
+				assert("Ruleì—ì„œ ì¸ìŠ¤í„´ìŠ¤ê°€ 2ë²ˆ ì´ìƒ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤");
 			}
 			InstanceExist = true;
 		}
