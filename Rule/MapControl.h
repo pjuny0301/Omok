@@ -16,7 +16,7 @@ public:
 		static bool InstanceExist = false;
 		if (InstanceExist)
 		{
-			assert("MapControl_t ¿¡¼­ ÀÎ½ºÅÏ½º°¡ µÎ ¹ø ÀÌ»ó »ı¼ºµÇ¾ú½À´Ï´Ù");
+			assert("MapControl_t ì—ì„œ ì¸ìŠ¤í„´ìŠ¤ê°€ ë‘ ë²ˆ ì´ìƒ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤");
 		}
 		InstanceExist = true;
 	}
@@ -24,13 +24,13 @@ public:
 	void set_true(std::pair<data_idx_type, data_idx_type> param)
 	{
 		auto [yIdx, xIdx] = param;
-		if (yIdx > size_y || xIdx > size_x) { throw exception("MapControl_t::set_true¿¡ ¹üÀ§¸¦ ³Ñ´Â °ªÀÌ Àü´ŞµÇ¾ú½À´Ï´Ù"); }
+		if (yIdx > size_y || xIdx > size_x) { throw exception("MapControl_t::set_trueì— ë²”ìœ„ë¥¼ ë„˜ëŠ” ê°’ì´ ì „ë‹¬ë˜ì—ˆìŠµë‹ˆë‹¤"); }
 		data[yIdx][xIdx] = true;
 	}
 	void set_false(std::pair<data_idx_type, data_idx_type> param)
 	{
 		auto [yIdx, xIdx] = param;
-		if (yIdx > size_y || xIdx > size_x) { throw exception("MapControl_t::set_true¿¡ ¹üÀ§¸¦ ³Ñ´Â °ªÀÌ Àü´ŞµÇ¾ú½À´Ï´Ù"); }
+		if (yIdx > size_y || xIdx > size_x) { throw exception("MapControl_t::set_trueì— ë²”ìœ„ë¥¼ ë„˜ëŠ” ê°’ì´ ì „ë‹¬ë˜ì—ˆìŠµë‹ˆë‹¤"); }
 		data[yIdx][xIdx] = false;
 	}
 	bool[size_y][size_x] get_data()
