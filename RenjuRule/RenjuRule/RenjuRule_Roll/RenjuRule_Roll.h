@@ -14,7 +14,7 @@ namespace RenjuRule
 			static bool InstanceExist = false;
 			if (InstanceExist)
 			{
-				assert("VictoryRoll_t ¿¡¼­ ÀÎ½ºÅÏ½º°¡ µÎ ¹ø »ı¼ºµÇ¾ú½À´Ï´Ù");
+				assert("VictoryRoll_t ì—ì„œ ì¸ìŠ¤í„´ìŠ¤ê°€ ë‘ ë²ˆ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤");
 			}
 			InstanceExist = true;
 		}
@@ -29,14 +29,14 @@ namespace RenjuRule
 			}
 		}
 	private:
-		bool VictoryRollByOneLine(bool arr[size_y][size_x], std::pair<int, int>& YX, std::pair<int, int>& d) // ÇÑ ¶óÀÎ¿¡ ÇÑÁ¤ÇØ¼­ ½Â¸® ÆÇ´ÜÇÔ
+		bool VictoryRollByOneLine(bool arr[size_y][size_x], std::pair<int, int>& YX, std::pair<int, int>& d) // í•œ ë¼ì¸ì— í•œì •í•´ì„œ ìŠ¹ë¦¬ íŒë‹¨í•¨
 		{
 			auto [yDirection, xDirection] = d;
 			auto [tempY, tempX] = YX;
 			/*
-			°£¼±ÀÌ ²÷±æ ¶§±îÁö ¹æÇâ ÂÊÀ¸·Î ³ª¾Æ°¨
-				°£¼±ÀÌ ²÷±æ ¶§±îÁö ¹æÇâÀÇ ¹İ´ëÂÊÀ¸·Î ³ª¾Æ°¨
-				³ª¾Æ°£ ¼ö´Â i.i°¡ 5¿Í °°À¸¸é ½Â¸®ÆÇÁ¤
+			ê°„ì„ ì´ ëŠê¸¸ ë•Œê¹Œì§€ ë°©í–¥ ìª½ìœ¼ë¡œ ë‚˜ì•„ê°
+				ê°„ì„ ì´ ëŠê¸¸ ë•Œê¹Œì§€ ë°©í–¥ì˜ ë°˜ëŒ€ìª½ìœ¼ë¡œ ë‚˜ì•„ê°
+				ë‚˜ì•„ê°„ ìˆ˜ëŠ” i.iê°€ 5ì™€ ê°™ìœ¼ë©´ ìŠ¹ë¦¬íŒì •
 			*/
 
 			int stoneNum = 0;
@@ -46,7 +46,7 @@ namespace RenjuRule
 				tempX += xDirection;
 				stoneNum++;
 			}
-			tempX = pointX - xDirection; // ¶È°°Àº °÷À» ´Ù½Ã Á¶»çÇÏ¸é Áßº¹µÇ¾î i ¼ıÀÚ°¡ 1 ´Ã¾î³­´Ù.
+			tempX = pointX - xDirection; // ë˜‘ê°™ì€ ê³³ì„ ë‹¤ì‹œ ì¡°ì‚¬í•˜ë©´ ì¤‘ë³µë˜ì–´ i ìˆ«ìê°€ 1 ëŠ˜ì–´ë‚œë‹¤.
 			tempY = pointY - yDirection;
 			while (arr[tempY][tempX])
 			{
@@ -74,13 +74,13 @@ namespace RenjuRule
 			static bool InstanceExist = false;
 			if (InstanceExist)
 			{
-				assert("_3_3_Search_t ¿¡¼­ ÀÎ½ºÅÏ½º°¡ µÎ ¹ø »ı¼ºµÇ¾ú½À´Ï´Ù");
+				assert("_3_3_Search_t ì—ì„œ ì¸ìŠ¤í„´ìŠ¤ê°€ ë‘ ë²ˆ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤");
 			}
 			InstanceExist = true;
 		}
 
 	private:
-		std::pair<int, int> _3_3_pos; //33ÀÎ ÁÂÇ¥ //side effect
+		std::pair<int, int> _3_3_pos; //33ì¸ ì¢Œí‘œ //side effect
 	public:
 		std::pair<int, int> operator ()(int arr[size_y][size_x], std::pair<int, int>& YX)
 		{
@@ -89,8 +89,8 @@ namespace RenjuRule
 
 			for (int i = 0; i < 4; i++)
 			{
-				ret = ret && _3_3_SearchByStraightLine(arr, YX, d[i]); // Á÷¼±ÀÎ 4 ¹æÇâ¿¡ ´ëÇØ 33ÆÇÁ¤
-				ret = ret && _3_3_RollByVerticalLine(arr, YX, d[i]); // ²ªÀº 4 ¹æÇâ¿¡ ´ëÇØ 33ÆÇÁ¤
+				ret = ret && _3_3_SearchByStraightLine(arr, YX, d[i]); // ì§ì„ ì¸ 4 ë°©í–¥ì— ëŒ€í•´ 33íŒì •
+				ret = ret && _3_3_RollByVerticalLine(arr, YX, d[i]); // êº¾ì€ 4 ë°©í–¥ì— ëŒ€í•´ 33íŒì •
 			}
 			return ret;
 		}
@@ -98,7 +98,7 @@ namespace RenjuRule
 	private:
 		bool _3_3_SearchByStraightLine(int arr[size_y][size_x], std::pair<int, int>& YX, std::pair<int, int>& d)
 		{
-			return isLineLength_3(arr, YX, d) && isLineLength_3(arr, YX, -1 * d); // µÎ ¹æÇâÀÇ ¼±ÀÇ ±æÀÌ°¡ ¸ğµÎ 3ÀÌ¸é 33 ÆÇÁ¤
+			return isLineLength_3(arr, YX, d) && isLineLength_3(arr, YX, -1 * d); // ë‘ ë°©í–¥ì˜ ì„ ì˜ ê¸¸ì´ê°€ ëª¨ë‘ 3ì´ë©´ 33 íŒì •
 		}
 
 		bool isLineLength_3(int arr[size_y][size_x], std::pair<int, int>& YX, std::pair<int, int>& d)
@@ -136,7 +136,7 @@ namespace RenjuRule
 			return isLineLength_3(arr, YX, -1 * d) && isLineLength_3(arr, YX, getVerticalDir(d));
 		}
 
-		std::pair<int, int> getVerticalDir(std::pair<int, int>& Dir) // ¼öÁ÷ÇÑ ¹æÇâ ±¸ÇÔ
+		std::pair<int, int> getVerticalDir(std::pair<int, int>& Dir) // ìˆ˜ì§í•œ ë°©í–¥ êµ¬í•¨
 		{
 			if (Dir.first == 0 || Dir.second == 0 && not(Dir.first == 0 && Dir.second == 0))
 			{
